@@ -1,0 +1,21 @@
+﻿<Window x:Class="ProjectAnatolia.PingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Ping" Height="200" Width="400" ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.ColumnSpan="2">
+            <TextBlock Text="Enter IP address or hostname:" />
+            <TextBox Name="txtPingAddress" Width="300" Margin="0,5,0,10"/>
+            <StackPanel Orientation="Horizontal" Margin="0,5,0,10">
+                <Button Name="btnPing" Content="Start Ping" Width="100" Click="Ping_Click" Margin="0,0,10,0"/>
+                <Button Name="btnStop" Content="Stop Ping" Width="100" Click="Stop_Click" IsEnabled="False"/>
+            </StackPanel>
+            <TextBox Name="txtPingResult" Height="80" Margin="0,5,0,0" IsReadOnly="True" TextWrapping="Wrap"/>
+        </StackPanel>
+    </Grid>
+</Window>

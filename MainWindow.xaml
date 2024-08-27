@@ -1,0 +1,16 @@
+﻿<Window x:Class="ProjectAnatolia.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="IBBE Network Toolkit" Height="400" Width="300"  ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel Margin="20">
+            <Button Content="Scan Network" Click="ScanNetwork_Click" Margin="5"/>
+            <Button Content="Ping IP/Website" Click="Ping_Click" Margin="5"/>
+            <Button Content="Open Port Scanner" Click="PortScanner_Click" Margin="5"/>
+            <Button Content="Public IP Lookup" Click="PublicIpLookup_Click" Margin="5"/>
+            <Button Content="MAC Lookup" Click="MacLookup_Click" Margin="5"/>
+            <Button Content="Speed Test" Click="SpeedTest_Click" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>
